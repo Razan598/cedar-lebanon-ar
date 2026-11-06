@@ -6,59 +6,192 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cedar of Lebanon | AR Experience</title>
   <style>
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f1e8;
-      color: #173b30;
+      background: #f6f3eb;
+      color: #243e32;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #173b30, #37684d);
+      color: white;
       text-align: center;
+      padding: 55px 20px;
     }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0 0 12px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 17px;
+      color: #e4eddf;
+    }
+
     main {
-      max-width: 650px;
-      margin: 60px auto;
-      padding: 24px;
+      max-width: 780px;
+      margin: auto;
+      padding: 30px 20px 60px;
     }
-    h1 { font-size: 32px; }
-    p { line-height: 1.6; }
+
+    section {
+      background: white;
+      padding: 28px;
+      margin: 22px 0;
+      border-radius: 16px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      color: #24543e;
+      margin-top: 0;
+    }
+
+    .center { text-align: center; }
+
     .button {
       display: inline-block;
-      background: #173b30;
+      background: #24543e;
       color: white;
-      padding: 17px 30px;
+      padding: 16px 30px;
       border-radius: 12px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 25px;
+      margin: 15px 0;
     }
-    .credit {
-      margin-top: 65px;
-      font-size: 12px;
+
+    .button:hover {
+      background: #173b30;
+    }
+
+    .note {
+      font-size: 14px;
       color: #666;
+    }
+
+    .fact {
+      background: #edf4eb;
+      padding: 15px;
+      border-left: 4px solid #37684d;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 12px;
+      color: #777;
     }
   </style>
 </head>
+
 <body>
-  <main>
-    <h1>🌲 Cedar of Lebanon</h1>
-    <h2>Discover Lebanon Through Augmented Reality</h2>
+
+<header>
+  <h1>🌲 Cedar of Lebanon</h1>
+  <p>Discover Lebanon Through Augmented Reality</p>
+</header>
+
+<main>
+
+  <section class="center">
+    <h2>Experience the Cedar in AR</h2>
     <p>
-      Experience the iconic Cedar of Lebanon,
-      a symbol of the country's natural heritage.
+      Bring one of Lebanon's most iconic natural
+      treasures into your surroundings through
+      augmented reality.
     </p>
 
     <a class="button"
        rel="ar"
        href="Cedar_Of_Lebanon_TEST3.usdz">
-      <img alt="" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="1" height="1">
+      <img alt=""
+           src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+           width="1" height="1">
       View Cedar in AR
     </a>
 
-    <p>Open this page in Safari on your iPhone.</p>
+    <p class="note">
+      Open in Safari on a compatible iPhone or iPad.
+      Tap the button and follow the instructions
+      to place the cedar in your environment.
+    </p>
+  </section>
 
-    <div class="credit">
-      3D model: Cedar Of Lebanon by Valery.Li
-      (CC BY 4.0).
+  <section>
+    <h2>About the Cedar of Lebanon</h2>
+    <p>
+      The Cedar of Lebanon (Cedrus libani) is an
+      evergreen conifer native to the mountains
+      of the eastern Mediterranean. It is renowned
+      for its majestic appearance, long lifespan,
+      and historical importance.
+    </p>
+    <p>
+      For thousands of years, cedar wood was
+      highly valued for construction, including
+      ships, temples, and palaces.
+    </p>
+  </section>
+
+  <section>
+    <h2>A National Symbol</h2>
+    <p>
+      The cedar tree stands at the center of
+      the Lebanese national flag, representing
+      endurance, strength, and resilience.
+    </p>
+    <p>
+      Beyond its natural beauty, it is deeply
+      connected to Lebanon's cultural identity
+      and heritage.
+    </p>
+  </section>
+
+  <section>
+    <h2>Did You Know?</h2>
+
+    <div class="fact">
+      🌲 Some cedar trees can survive for
+      more than 1,000 years.
     </div>
-  </main>
+
+    <div class="fact">
+      🏔️ Lebanon's famous cedar forests
+      grow in mountainous regions.
+    </div>
+
+    <div class="fact">
+      📜 The Cedars of God forest in
+      Bsharri is part of a UNESCO World
+      Heritage Site.
+    </div>
+  </section>
+
+  <section>
+    <h2>How to Use Augmented Reality</h2>
+    <p>
+      1. Open this page using Safari on your iPhone.<br>
+      2. Tap "View Cedar in AR".<br>
+      3. Move your phone slowly to detect a surface.<br>
+      4. Place the cedar and explore it from different angles.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  3D model: Cedar Of Lebanon by Valery.Li
+  (CC BY 4.0).<br>
+  Discover Lebanon Through Augmented Reality
+</footer>
+
 </body>
 </html>
